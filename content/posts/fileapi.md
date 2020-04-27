@@ -6,7 +6,7 @@ tags:
     - "javascript"
 ---
 
- One of my favourite and exciting topic was how can i implement file uploading in my website. I used to watch youtube videos where they do it with `PHP`. But they all just don't workout for me. Thank god there's `File API` which  allows javascript to access information about file like `Name`, `Last modified`, `Type`, `Size`, `webkitRelativePath`. Let's dive deeper on how to use it.
+ test One of my favourite and exciting topic was how can i implement file uploading in my website. I used to watch youtube videos where they do it with `PHP`. But they all just don't workout for me. Thank god there's `File API` which  allows javascript to access information about file like `Name`, `Last modified`, `Type`, `Size`, `webkitRelativePath`. Let's dive deeper on how to use it.
  
  ```HTML
  <!--  to get file as input -->
