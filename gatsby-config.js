@@ -21,6 +21,9 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    "gatsby-plugin-draft",
+    "gatsby-plugin-sharp",
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,7 +37,6 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-    "gatsby-plugin-draft",
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -52,7 +54,6 @@ module.exports = {
         ],
       },
     },
-    "gatsby-plugin-sharp",
-    `gatsby-transformer-sharp`,
+
   ],
 }

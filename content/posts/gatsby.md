@@ -2,7 +2,7 @@
 title: "Gatsby Bootcamp"
 thumbnail: "../thumbnails/js.png"
 date: "2019-07-10"
-draft: false
+draft: true
 tags:
     - "api"
     - "javascript"
@@ -10,6 +10,8 @@ tags:
 I just launched a new Bootcamp
 
 ![Nature](../images/shutterstock_1.jpg)
+[Gatsby Tutorial](/blog/xmlhttp)
+>Tip
 
 ## Topics Covered
 
