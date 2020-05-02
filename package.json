@@ -8,6 +8,7 @@
     "build": "gatsby build",
     "develop": "env-cmd gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
+    "lint:markdown": "markdownlint ./content/posts",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "rimraf ./.cache",
@@ -41,6 +42,9 @@
   },
   "devDependencies": {
     "env-cmd": "^9.0.3",
+    "eslint": "^6.8.0",
+    "lint-staged": "^10.2.2",
+    "markdownlint": "^0.20.2",
     "prettier": "^1.18.2"
   },
   "repository": {
