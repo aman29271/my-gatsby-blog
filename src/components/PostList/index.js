@@ -1,1 +1,1 @@
-module.exports = require('./postList')
+module.exports = require("./postList")

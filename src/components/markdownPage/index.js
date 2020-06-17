@@ -1,1 +1,1 @@
-module.exports = require('./markdownPage')
+module.exports = require("./markdownPage")

@@ -2,7 +2,7 @@
 title: "Secret of Javascript Array, shallow and deep cloning"
 date: "2020-04-29"
 draft: true
-thumbnail: "../thumbails/js.png"
+thumbnail: "../thumbnails/js.png"
 tags:
   - "javascript"
 ---
