@@ -11,7 +11,7 @@
     "lint:markdown": "markdownlint ./content/posts",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "rimraf ./.cache",
+    "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
@@ -41,7 +41,7 @@
     "typography": "^0.16.19"
   },
   "devDependencies": {
-    "env-cmd": "^9.0.3",
+    "env-cmd": "^10.1.0",
     "eslint": "^6.8.0",
     "lint-staged": "^10.2.2",
     "markdownlint": "^0.20.2",

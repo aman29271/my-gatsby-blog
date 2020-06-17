@@ -25,8 +25,6 @@ module.exports = async ({ graphql, actions }) => {
         frontmatter: { tags },
       },
     } = post
-    // const { slug } = post.node.fields
-    // const { tags } = post.node.frontmatter
     createPage({
       component: blogTemplate,
       path: `/blog/${slug}`,
