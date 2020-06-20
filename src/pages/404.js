@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
-import Helmet from "react-helmet"
+import SEO from "../components/SEO"
 const NotFound = () => {
   return (
     <Layout>
-      <Helmet title={`Page Not Found`} />
+      <SEO title={`Page Not Found`} />
       <center>
         <h1>Page Not Found</h1>
         <span>

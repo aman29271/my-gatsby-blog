@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import contactStyle from "../components/modules/contact.module.scss"
-import Helmet from "react-helmet"
-import config from "../../data/siteConfig"
+import SEO from "../components/SEO"
+
 const Contact = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -20,7 +20,7 @@ const Contact = () => {
   const { Email, githubUsername, twitterUsername, linkedInUsername } = data.site.siteMetadata
   return (
     <Layout>
-      <Helmet title={`Contact - ${config.userName}`} />
+      <SEO title={`Contact Me`} />
       <div>
         <h2 className={contactStyle.title}>Stay in touch</h2>
         <p>I write about stuff related to Javascript, React, Node.JS.</p>

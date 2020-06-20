@@ -1,8 +1,8 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Helmet from "react-helmet"
-import config from "../../data/siteConfig"
+import SEO from "../components/SEO"
+
 const Aboutpage = () => {
   const query = graphql`
     query {
@@ -17,7 +17,7 @@ const Aboutpage = () => {
   `
   return (
     <Layout>
-      <Helmet title={`Me - ${config.userName}`} />
+      <SEO title={`About Myself`} />
       <div>
         <h2>About me</h2>
         <p>

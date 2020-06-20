@@ -2,9 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import "../components/modules/posts.scss"
-import Helmet from "react-helmet"
-import config from "../../data/siteConfig"
 import PostList from "../components/PostList"
+import SEO from "../components/SEO"
 
 export const data = graphql`
   query($dev: MarkdownRemarkFieldsFilterInput) {
@@ -31,7 +30,7 @@ const BlogPage = ({ data }) => {
   } = data
   return (
     <Layout>
-      <Helmet title={`Articles - ${config.userName}`} />
+      <SEO title={`My Articles `} />
       <PostList posts={edges} mainListing={true} />
     </Layout>
   )

@@ -1,12 +1,11 @@
 import React from "react"
 import Layout from "../components/layout"
-import Helmet from "react-helmet"
 import "../styles/index.scss"
-import config from "../../data/siteConfig"
+import SEO from "../components/SEO"
 const Indexpage = () => {
   return (
     <Layout>
-      <Helmet title={config.siteTitle} />
+      <SEO title="Home | Aman" />
       <div>
         <h1>Hi, I am Aman</h1>
         <p>

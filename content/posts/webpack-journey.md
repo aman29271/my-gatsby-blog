@@ -1,6 +1,7 @@
 ---
 title: "My journey towards learning webpack"
 date: "2020-04-01"
+draft: true
 thumbnail: "../thumbnails/webpack.png"
 tags:
     - "webpack"

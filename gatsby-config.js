@@ -8,21 +8,23 @@ const [github, twitter, linkedin] = config.userLinks
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: config.siteTitle,
-    author: config.userName,
+    title: config.title,
+    author: config.author,
     Email: config.userEmail,
     githubUsername: github.username,
     twitterUsername: twitter.username,
     linkedInUsername: linkedin.username,
-    defaultTitle: config.siteTitle,
-    defaultDescription: config.siteDescription,
+    siteTitle: config.siteTitle,
+    description: config.description,
     siteUrl: config.siteUrl,
     defaultImage: config.siteLogo,
+    keywords: config.keywords,
   },
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-draft",
     "gatsby-plugin-sharp",
+    "gatsby-plugin-catch-links",
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,

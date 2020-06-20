@@ -7,8 +7,8 @@ const PostList = ({ posts, mainListing }) => {
       {mainListing && <h2>Articles</h2>}
       {/* <p>Post will appear Here later on.</p> */}
       <ul className={`posts`}>
-        {posts.map(({ node }) => (
-          <Post data={node} />
+        {posts.map(({ node },index) => (
+          <Post data={node} key={index}/>
         ))}
       </ul>
     </div>

@@ -1,5 +1,5 @@
 import React from "react"
-import Helmet from "react-helmet"
+import SEO from "../components/SEO"
 import Layout from "../components/layout"
 import "../components/modules/posts.scss"
 import { graphql } from "gatsby"
@@ -13,7 +13,7 @@ const tagPage = ({ data, pageContext }) => {
   const tagHeader = `Post${totalCount === 1 ? "" : "s"} tagged with `
   return (
     <Layout>
-      <Helmet title={tagHeader}></Helmet>
+      <SEO title={`Post${totalCount === 1 ? "" : "s"} tagged with ${tag}`}></SEO>
       <h2 className={`title`}>
         {tagHeader}
         <u>{`${tag}`}</u>

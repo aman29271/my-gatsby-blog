@@ -1,14 +1,26 @@
 const config = {
-  siteTitle: "Aman Kumar | Web developer", // Site title.
-  siteShortDesc: "Aman Kumar Web developer",
+  siteTitle: "Aman | Web developer", // Site title.
+  siteShortDesc: "Aman, Web developer",
   siteLogo: "/logos/logo-1024.png",
+  description:
+    "Useful articles for a web developer that might be helpful for gaining some insights into Javascript, Nodejs especially.",
+  title: "A website Blog By Aman",
+  author: "Aman",
+  keywords: [
+    "Nodejs",
+    "Javascript",
+    "Performance Optimisation",
+    "SEO",
+    "CLI development",
+    "web development",
+    "express"
+  ],
   reponame: "gatsby-bootcamp-project",
   repository: "https://github.com/aman29271/gatsby-bootcamp-project",
-  siteUrl: "https://www.example.com", // Domain of your website without pathPrefix.
-  siteDescription: "A GatsbyJS stater with Advanced design in mind.", // Website description used for RSS feeds/meta description tag.
-  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
+  siteUrl: "https://amank.netlify.com", // Domain of your website without pathPrefix.
+  googleAnalyticsID: "", // GA tracking ID.
   postDefaultCategoryID: "Tech", // Default category for posts.
-  userName: "Aman Kumar", // Username to display in the author segment.
+  userName: "Aman", // Username to display in the author segment.
   gitUsername: "aman29271",
   userEmail: "aman29271@gmail.com", // Email used for RSS feed's author segment
   userLocation: "India", // User location to display in the author segment.
@@ -28,19 +40,16 @@ const config = {
     {
       label: "linkedIn",
       username: "aman29271",
-    }
+    },
   ],
   copyright: "Copyright © 2019. Advanced User", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
-  backgroundColor: "#e0e0e0" // Used for setting manifest background color.
-};
+  backgroundColor: "#e0e0e0", // Used for setting manifest background color.
+}
 // Make sure siteUrl doesn't have an ending forward slash
-if (config.siteUrl.substr(-1) === "/")
-  config.siteUrl = config.siteUrl.slice(0, -1);
+if (config.siteUrl.substr(-1) === "/") config.siteUrl = config.siteUrl.slice(0, -1)
 
 // Make sure siteRss has a starting forward slash
-if (config.siteRss && config.siteRss[0] !== "/")
-  config.siteRss = `/${config.siteRss}`;
+if (config.siteRss && config.siteRss[0] !== "/") config.siteRss = `/${config.siteRss}`
 
-module.exports = config;
-
+module.exports = config
