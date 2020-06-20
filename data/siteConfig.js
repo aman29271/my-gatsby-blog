@@ -13,11 +13,12 @@ const config = {
     "SEO",
     "CLI development",
     "web development",
-    "express"
+    "express",
   ],
+  googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION_ID || "",
   reponame: "gatsby-bootcamp-project",
   repository: "https://github.com/aman29271/gatsby-bootcamp-project",
-  siteUrl: "https://amank.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://amank.netlify.app", // Domain of your website without pathPrefix.
   googleAnalyticsID: "", // GA tracking ID.
   postDefaultCategoryID: "Tech", // Default category for posts.
   userName: "Aman", // Username to display in the author segment.

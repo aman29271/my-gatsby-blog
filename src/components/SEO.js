@@ -12,6 +12,7 @@ const SEO = ({ title, description, lang, meta, image: metaImage, pathname }) => 
           siteUrl
           author
           keywords
+          googleSiteVerificationId
         }
       }
     }
@@ -37,6 +38,10 @@ const SEO = ({ title, description, lang, meta, image: metaImage, pathname }) => 
             : []
         }
         meta={[
+          {
+            name: "google-site-verification",
+            content: site.siteMetadata.googleSiteVerificationId,
+          },
           {
             name: `description`,
             content: metaDescription,

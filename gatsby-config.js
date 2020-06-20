@@ -19,6 +19,7 @@ module.exports = {
     siteUrl: config.siteUrl,
     defaultImage: config.siteLogo,
     keywords: config.keywords,
+    googleSiteVerificationId: config.googleSiteVerification,
   },
   plugins: [
     "gatsby-plugin-sass",
