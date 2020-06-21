@@ -10,7 +10,7 @@ const MarkdownHeader = ({ data, slug }) => {
     <>
       <SEO title={title} />
       <div className="head_container">
-        {thumbnail ? <Img fixed={thumbnail.childImageSharp.fixed} /> : null}
+        {thumbnail ? <Img fluid={thumbnail.childImageSharp.fluid} alt="Icon Logo" /> : null}
         <div className={`head_wrapper`}>
           <h2 className={`head_title`}>{title}</h2>
           <p>

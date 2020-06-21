@@ -11,7 +11,7 @@ const Post = ({ data }) => {
   return (
     <li className={`post`} key={id}>
       <Link to={`/blog/${slug}`} className={`content_wrapper`}>
-        {thumbnail ? <Img fixed={thumbnail.childImageSharp.fixed} /> : null}
+        {thumbnail ? <Img fluid={thumbnail.childImageSharp.fluid} alt="Icon logo"/> : null}
         <div className={`content`}>
           <h3>{title}</h3>
           <p>

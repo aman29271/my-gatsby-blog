@@ -53,8 +53,8 @@ export const frontmatterfragment = graphql`
       tags
       thumbnail {
         childImageSharp {
-          fixed(height: 150, width: 150) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 150, srcSetBreakpoints: [50,100,150]) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
