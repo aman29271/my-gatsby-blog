@@ -27,6 +27,14 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-plugin-catch-links",
     `gatsby-transformer-sharp`,
+    "gatsby-plugin-sitemap",
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-133905360-2",
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
