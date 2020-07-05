@@ -1,10 +1,10 @@
 ---
 title: "Intersection observer Explained"
 date: 2020-07-05T10:52:20
-draft: true
+draft: false
 thumbnail: "../thumbnails/js.png"
 categories:
-        - "javascript"
+        - "web"
 tags:
     - "javascript"
 ---
