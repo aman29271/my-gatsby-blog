@@ -57,7 +57,7 @@ const Aboutpage = () => {
         />
       </div>
       <div>
-        <h2 id="currently-using">Currently Using</h2>
+        <h2 id="currently-using" style={{marginBottom:"0.85rem"}}>Currently Using</h2>
         <hr />
         <ul>
           <li>Computer: Dell Inspiron 5557</li>

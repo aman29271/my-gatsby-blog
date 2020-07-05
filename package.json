@@ -8,14 +8,12 @@
     "build": "gatsby build",
     "develop": "env-cmd gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "lint:markdown": "markdownlint ./content/posts",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
-    "bulma": "^0.7.5",
     "gatsby": "^2.13.25",
     "gatsby-image": "^2.2.6",
     "gatsby-plugin-catch-links": "^2.3.5",

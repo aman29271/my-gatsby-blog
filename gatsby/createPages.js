@@ -7,6 +7,7 @@ module.exports = async ({ graphql, actions }) => {
   const { createPage } = actions
   const tagTemplate = resolve(`src/templates/tags.js`)
   const blogTemplate = resolve(`src/templates/page.js`)
+  const categoryComponent = resolve(`src/templates/category.js`)
 
   const draftGeneratedQuery = draftQuery(dev)
   const res = await graphql(`
@@ -17,12 +18,13 @@ module.exports = async ({ graphql, actions }) => {
 
   tagSet = new Set()
   imgSet = new Set()
+  categorySet = new Set()
   const posts = res.data.allMarkdownRemark.edges
   posts.forEach(post => {
     const {
       node: {
         fields: { slug },
-        frontmatter: { tags },
+        frontmatter: { tags, categories },
       },
     } = post
     createPage({
@@ -37,6 +39,11 @@ module.exports = async ({ graphql, actions }) => {
         tagSet.add(tag)
       })
     }
+    if (categories) {
+      categories.forEach(category => {
+        categorySet.add(category)
+      })
+    }
   })
 
   tagArray = Array.from(tagSet)
@@ -47,6 +54,17 @@ module.exports = async ({ graphql, actions }) => {
       path: `/tags/${tag}`,
       context: {
         tag,
+        dev: devContext,
+      },
+    })
+  })
+  categoryArry = Array.from(categorySet)
+  categoryArry.forEach(category => {
+    createPage({
+      component: categoryComponent,
+      path: `/category/${category}`,
+      context: {
+        category,
         dev: devContext,
       },
     })

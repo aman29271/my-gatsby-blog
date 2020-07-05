@@ -8,3 +8,13 @@ a {
     background-color: #e2eafd;
   }
 }
+.gatsby-highlight {
+  margin: 30px 0px;
+}
+a.anchor {
+  border-bottom: none;
+  &:hover {
+    border-bottom: none;
+    background-color: unset;
+  }
+}

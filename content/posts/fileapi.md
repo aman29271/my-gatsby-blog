@@ -3,6 +3,8 @@ title: "Basic Understanding of File Api"
 date: "2019-07-25"
 draft: true
 thumbnail: "../thumbnails/js.png"
+categories:
+        - "javascript"
 tags:
     - "javascript"
 ---

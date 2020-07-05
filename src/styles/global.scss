@@ -26,3 +26,12 @@
     height: 100px !important;
   }
 }
+::-moz-selection {
+  background-color: #00d1b2;
+  color: #fff
+}
+
+::selection {
+  background-color: #00d1b2;
+  color: #fff;
+}

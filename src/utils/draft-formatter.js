@@ -9,6 +9,7 @@ function draftFormatter(dev) {
         }
         frontmatter {
           tags
+          categories
         }
       }
     }
