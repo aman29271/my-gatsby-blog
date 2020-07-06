@@ -16,7 +16,14 @@ const tagPage = ({ data, pageContext }) => {
       <SEO title={`Post${totalCount === 1 ? "" : "s"} tagged with ${tag}`}></SEO>
       <h2 className={`title`}>
         {tagHeader}
-        <u>{`${tag}`}</u>
+        <u
+          style={{
+            textTransform: "capitalize",
+            textDecoration: "none",
+            paddingBottom: "2px",
+            borderBottom: "2px solid blue",
+          }}
+        >{`${tag}`}</u>
       </h2>
       <ul className={`posts`}>
         <PostList posts={edges} mainListing={false} />
@@ -53,7 +60,7 @@ export const frontmatterfragment = graphql`
       tags
       thumbnail {
         childImageSharp {
-          fluid(maxWidth: 150, srcSetBreakpoints: [50,100,150]) {
+          fluid(maxWidth: 150, srcSetBreakpoints: [50, 100, 150]) {
             ...GatsbyImageSharpFluid
           }
         }
