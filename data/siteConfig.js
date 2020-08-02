@@ -9,15 +9,15 @@ const config = {
   keywords: [
     "Nodejs",
     "Javascript",
-    "Performance Optimisation",
+    "Performance Optimization",
     "SEO",
     "CLI development",
     "web development",
     "express",
   ],
   googleSiteVerification: process.env.GOOGLE_SITE_VERIFICATION_ID || "",
-  reponame: "gatsby-bootcamp-project",
-  repository: "https://github.com/aman29271/gatsby-bootcamp-project",
+  reponame: "my-gatsby-blog",
+  repository: "https://github.com/aman29271/my-gatsby-blog",
   siteUrl: "https://amank.netlify.app", // Domain of your website without pathPrefix.
   googleAnalyticsID: "", // GA tracking ID.
   postDefaultCategoryID: "Tech", // Default category for posts.

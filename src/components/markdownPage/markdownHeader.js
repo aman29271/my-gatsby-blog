@@ -2,10 +2,11 @@ import React from "react"
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 import SEO from "../SEO"
+import {repository} from '../../../data/siteConfig'
 
 const MarkdownHeader = ({ data, slug }) => {
   const { title, date, tags, thumbnail } = data
-  const gitlink = "https://github.com/aman29271/gatsby-bootcamp-project/blob/master/content/posts/"
+  const gitlink = `${repository}/blob/master/content/posts/`
   return (
     <>
       <SEO title={title} />
